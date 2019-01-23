@@ -4,6 +4,7 @@ const marked = require('marked');
 
 module.exports = (page, author) => layout(html`
   <h4>by <a href="/users/${author.id}">${author.name}</a></h4>
+  <h4>Page Tags go here</h4>
   <hr/>
   <div class="page-body">$${marked(page.content)}</div>
   <hr/>

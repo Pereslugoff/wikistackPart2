@@ -24,7 +24,7 @@ app.use((req,res,next) => {
 
 app.use((err, req, res, next) => {
    console.log(err.stack)
-   res.status(500).send(errorPage('Sorryn internal server error', err))
+   res.status(500).send(errorPage('Sorry internal server error', err))
 })
 
 module.exports = app;

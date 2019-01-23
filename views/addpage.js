@@ -14,6 +14,13 @@ module.exports = () => layout(html`
     </div>
 
     <div class="form-group">
+      <label for="tags" class="col-sm-2 control-label">Tags</label>
+      <div class="col-sm-10">
+        <input name="tags" type="text" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
       <label for="email" class="col-sm-2 control-label">Author Email</label>
       <div class="col-sm-10">
         <input name="email" type="text" class="form-control"/>
